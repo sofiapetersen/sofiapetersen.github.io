@@ -16,11 +16,12 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg flex items-center justify-center">
-              <span className="text-gray-800 font-bold text-sm">A</span>
-            </div>
-            <span className="text-xl font-bold text-gray-800">AutoBot</span>
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/2a3aca1d-eeb9-483f-ab36-8fd6d2cd9b23.png" 
+              alt="CSV Logo" 
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Desktop Menu */}
