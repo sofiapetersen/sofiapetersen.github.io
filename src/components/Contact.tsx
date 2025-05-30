@@ -6,7 +6,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   const handleSendWhatsApp = () => {
-    const encodedMessage = encodeURIComponent(message || "Olá! Gostaria de saber mais sobre os serviços da AutoBot.");
+    const encodedMessage = encodeURIComponent(message || "Olá! Gostaria de saber mais sobre os serviços da CSV.");
     window.open(`https://wa.me/5551996413357?text=${encodedMessage}`, '_blank');
   };
 

@@ -9,9 +9,9 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-8 h-8 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg flex items-center justify-center">
-                <span className="text-gray-800 font-bold text-sm">A</span>
+                <span className="text-gray-800 font-bold text-sm">C</span>
               </div>
-              <span className="text-xl font-bold">AutoBot</span>
+              <span className="text-xl font-bold">CSV</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
               Transformamos negócios através de automações inteligentes e chatbots para WhatsApp. Sua empresa mais eficiente e conectada com seus clientes.
@@ -70,7 +70,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-500">
-            &copy; 2024 AutoBot. Todos os direitos reservados.
+            &copy; 2024 CSV. Todos os direitos reservados.
           </p>
         </div>
       </div>

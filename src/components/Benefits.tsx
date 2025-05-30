@@ -30,7 +30,7 @@ const Benefits = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Por que escolher a <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">AutoBot</span>?
+            Por que escolher a <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">CSV</span>?
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Transformamos a forma como você se relaciona com seus clientes através da tecnologia
