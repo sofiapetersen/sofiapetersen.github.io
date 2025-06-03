@@ -1,21 +1,282 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSV Agency</title>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infográfico: Automação de Agendamentos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+        }
+        .section-title {
+            font-size: 1.75rem; /* 28px */
+            font-weight: 700;
+            color: #1e3a8a; /* Dark blue */
+            margin-bottom: 1.5rem; /* 24px */
+            text-align: center;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem; /* 12px */
+            padding: 1.5rem; /* 24px */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-bottom: 1.5rem; /* 24px */
+        }
+        .icon-placeholder {
+            width: 3rem; /* 48px */
+            height: 3rem; /* 48px */
+            background-color: #e0e7ff; /* Light indigo */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem; /* 16px */
+            font-size: 1.5rem; /* 24px */
+            color: #3730a3; /* Indigo */
+        }
+        .step-icon {
+            width: 2.5rem; /* 40px */
+            height: 2.5rem; /* 40px */
+            background-color: #1e3a8a; /* Dark blue */
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin: 0 auto 0.5rem auto; /* 8px */
+        }
+        .benefit-icon {
+            color: #16a34a; /* Green */
+            font-size: 1.5rem; /* 24px */
+            margin-right: 0.5rem; /* 8px */
+        }
+        .price-tag {
+            background-color: #dbeafe; /* Light blue */
+            color: #1e3a8a; /* Dark blue */
+            padding: 0.5rem 1rem; /* 8px 16px */
+            border-radius: 0.5rem; /* 8px */
+            font-weight: 600;
+        }
+        .cta-button {
+            background-color: #2563eb; /* Blue */
+            color: white;
+            padding: 0.75rem 1.5rem; /* 12px 24px */
+            border-radius: 0.5rem; /* 8px */
+            text-align: center;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #1d4ed8; /* Darker blue */
+        }
+        .flow-arrow {
+            font-size: 2rem; /* 32px */
+            color: #93c5fd; /* Lighter blue for arrows */
+            text-align: center;
+            margin: 1rem 0; /* 16px */
+        }
+        .step-image {
+            margin-top: 1rem; /* 16px */
+            md:margin-top: 0;
+            md:margin-left: auto;
+            border-radius: 0.375rem; /* 6px */
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            width: 100%;
+            max-width: 200px; /* Ajustado para melhor visualização das imagens reais */
+            height: auto;
+            object-fit: contain; /* Para garantir que a imagem inteira seja visível */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto p-4 md:p-8 max-w-4xl">
 
-    <meta property="og:title" content="CSV Agency" />
-    <meta property="og:type" content="website" />
+        <header class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-blue-700 mb-4">
+                Transforme Sua Gestão de Agendamentos
+            </h1>
+            <p class="text-xl text-blue-600">
+                e Diga Adeus aos "No-Shows"!
+            </p>
+        </header>
 
-    <script type="module" crossorigin src="/assets/index-D5V8mBkm.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DPCeTvLY.css">
-  </head>
+        <section class="mb-12">
+            <h2 class="section-title">O Problema: Tempo Perdido e Clientes Ausentes</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="card flex items-start">
+                    <div class="icon-placeholder">😟</div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1 text-gray-800">Agendamentos Não Confirmados</h3>
+                        <p class="text-gray-600 text-sm">Resultam em horários vagos e perda de receita.</p>
+                    </div>
+                </div>
+                <div class="card flex items-start">
+                    <div class="icon-placeholder">⏳</div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1 text-gray-800">Confirmações Manuais</h3>
+                        <p class="text-gray-600 text-sm">Horas gastas em ligações e mensagens repetitivas.</p>
+                    </div>
+                </div>
+                <div class="card flex items-start">
+                    <div class="icon-placeholder">🔄</div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1 text-gray-800">Desorganização</h3>
+                        <p class="text-gray-600 text-sm">Dificuldade com cancelamentos e reagendamentos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+        <section class="mb-12">
+            <h2 class="section-title">Nossa Solução: Automação Inteligente!</h2>
+            <div class="card text-center">
+                <div class="flex justify-center items-center mb-4">
+                    <img src="https://placehold.co/60x60/A0D2DB/333333?text=GCal" alt="Ícone do Google Agenda" class="w-12 h-12 md:w-16 md:h-16 rounded-full shadow-md">
+                    <span class="text-4xl mx-4 text-blue-500 font-bold">&rarr;</span>
+                    <img src="https://placehold.co/60x60/F9A826/333333?text=Auto" alt="Ícone de Automação" class="w-12 h-12 md:w-16 md:h-16 rounded-full shadow-md">
+                    <span class="text-4xl mx-4 text-blue-500 font-bold">&rarr;</span>
+                    <img src="https://placehold.co/60x60/25D366/FFFFFF?text=WA" alt="Ícone do WhatsApp" class="w-12 h-12 md:w-16 md:h-16 rounded-full shadow-md">
+                </div>
+                <p class="text-gray-700 md:text-lg">
+                    Automatizamos lembretes e confirmações via WhatsApp, integrados ao seu Google Agenda.
+                    Simples, visual e eficiente!
+                </p>
+            </div>
+        </section>
 
-  </body>
+        <section class="mb-12">
+            <h2 class="section-title">Como Funciona? Super Simples!</h2>
+            <div class="space-y-8">
+                <div class="card">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="step-icon mb-4 md:mb-0 md:mr-6">1</div>
+                        <div class="text-center md:text-left flex-grow">
+                            <h3 class="font-semibold text-xl mb-2 text-gray-800">Agende no Google Agenda</h3>
+                            <p class="text-gray-600">Use o Google Agenda como sempre fez:</p>
+                            <ul class="list-disc list-inside text-gray-600 mt-2 text-sm">
+                                <li><strong>Título:</strong> Nome do Cliente + Serviço (Ex: Maria Silva - Consulta)</li>
+                                <li><strong>Descrição:</strong> Número do WhatsApp do cliente (com DDD)</li>
+                            </ul>
+                        </div>
+                         <img src="Criar evento.jpg" alt="Tela de criação de evento no Google Agenda com campos de título e descrição destacados" class="step-image" onerror="this.src='https://placehold.co/200x150/E0E7FF/1E3A8A?text=Erro+ao+carregar+Criar+evento.jpg'; this.alt='Erro ao carregar imagem da criação de evento no Google Agenda'">
+                    </div>
+                </div>
+                <div class="flow-arrow">⬇️</div>
+
+                <div class="card">
+                     <div class="flex flex-col md:flex-row items-center">
+                        <div class="step-icon mb-4 md:mb-0 md:mr-6">2</div>
+                        <div class="text-center md:text-left flex-grow">
+                            <h3 class="font-semibold text-xl mb-2 text-gray-800">A Mágica Acontece</h3>
+                            <p class="text-gray-600">Nossa automação entra em ação:</p>
+                            <ul class="list-disc list-inside text-gray-600 mt-2 text-sm">
+                                <li>Diariamente às 9h, verifica os agendamentos do dia seguinte.</li>
+                                <li>Mensagens de lembrete são enviadas via WhatsApp.</li>
+                            </ul>
+                        </div>
+                        <img src="Eventos criados 1.1.jpg" alt="Exemplo de eventos no Google Agenda antes do envio de lembretes" class="step-image" onerror="this.src='https://placehold.co/200x150/FFE0B2/FB8C00?text=Erro+ao+carregar+Eventos+criados.jpg'; this.alt='Erro ao carregar imagem de eventos no Google Agenda'">
+                    </div>
+                </div>
+                <div class="flow-arrow">⬇️</div>
+
+                <div class="card">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="step-icon mb-4 md:mb-0 md:mr-6">3</div>
+                        <div class="text-center md:text-left flex-grow">
+                            <h3 class="font-semibold text-xl mb-2 text-gray-800">Interação do Cliente</h3>
+                            <p class="text-gray-600">O cliente responde no WhatsApp para:</p>
+                            <ul class="list-disc list-inside text-gray-600 mt-2 text-sm">
+                                <li>✅ <strong>Confirmar:</strong> Resposta automática de agradecimento.</li>
+                                <li>❌ <strong>Cancelar:</strong> Resposta automática e opção de reagendar.</li>
+                                <li>🔄 <strong>Reagendar:</strong> Resposta automática para ver novos horários.</li>
+                            </ul>
+                        </div>
+                        <img src="confirmar.jpg" alt="Exemplo de conversa no WhatsApp mostrando cliente a confirmar agendamento" class="step-image" onerror="this.src='https://placehold.co/200x300/C8E6C9/4CAF50?text=Erro+ao+carregar+confirmar.jpg'; this.alt='Erro ao carregar imagem de confirmação no WhatsApp'">
+                    </div>
+                </div>
+                <div class="flow-arrow">⬇️</div>
+
+                <div class="card">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="step-icon mb-4 md:mb-0 md:mr-6">4</div>
+                        <div class="text-center md:text-left flex-grow">
+                            <h3 class="font-semibold text-xl mb-2 text-gray-800">Agenda Atualizada!</h3>
+                            <p class="text-gray-600">Seu Google Agenda é atualizado visualmente:</p>
+                            <ul class="list-disc list-inside text-gray-600 mt-2 text-sm">
+                                <li><span class="font-bold text-green-600">VERDE:</span> Confirmado!</li>
+                                <li><span class="font-bold text-red-600">VERMELHO:</span> Reagendar (requer sua atenção).</li>
+                                <li><span class="font-bold text-gray-500">REMOVIDO:</span> Cancelado (horário liberado).</li>
+                            </ul>
+                        </div>
+                        <img src="Eventos depois 1.1.jpg" alt="Exemplo de evento confirmado (verde) no Google Agenda após interação do cliente" class="step-image" onerror="this.src='https://placehold.co/200x100/A0D2DB/1E3A8A?text=Erro+ao+carregar+Evento+confirmado.jpg'; this.alt='Erro ao carregar imagem de evento confirmado no Google Agenda'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="section-title">Benefícios Que Você Vai Amar!</h2>
+            <div class="card">
+                <ul class="space-y-3">
+                    <li class="flex items-center text-gray-700"><span class="benefit-icon">✔️</span>Redução drástica de "No-Shows".</li>
+                    <li class="flex items-center text-gray-700"><span class="benefit-icon">✔️</span>Economia de tempo precioso (adeus confirmações manuais!).</li>
+                    <li class="flex items-center text-gray-700"><span class="benefit-icon">✔️</span>Simplicidade: Continue usando o Google Agenda que você já domina.</li>
+                    <li class="flex items-center text-gray-700"><span class="benefit-icon">✔️</span>Organização aprimorada: Agenda sempre atualizada e com status visual.</li>
+                    <li class="flex items-center text-gray-700"><span class="benefit-icon">✔️</span>Comunicação profissional e padronizada.</li>
+                    <li class="flex items-center text-gray-700"><span class="benefit-icon">✔️</span>Flexibilidade total: Personalize mensagens, horários e mais.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="section-title">Condições Especiais Para Começar Agora!</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card text-center">
+                    <div class="icon-placeholder mx-auto mb-3">🎁</div>
+                    <h3 class="font-semibold text-xl mb-2 text-gray-800">Teste GRATUITAMENTE por 7 Dias!</h3>
+                    <p class="text-gray-600">Sem compromisso. Experimente na prática!</p>
+                </div>
+                <div class="card">
+                    <h3 class="font-semibold text-xl mb-3 text-center text-gray-800">Invista na Eficiência:</h3>
+                    <div class="space-y-3">
+                        <p class="flex justify-between items-center text-gray-700"><span>Setup da Automação:</span> <span class="price-tag">R$300</span></p>
+                        <p class="text-xs text-gray-500 text-right">(Pagamento único)</p>
+                        <p class="flex justify-between items-center text-gray-700"><span>Manutenção Mensal:</span> <span class="price-tag">R$60</span></p>
+                        <p class="text-xs text-gray-500 text-right">(Suporte e funcionamento garantidos)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-6 text-center bg-blue-50 border-blue-200 border">
+                 <div class="icon-placeholder mx-auto mb-3 bg-blue-200 text-blue-700">✨</div>
+                <h3 class="font-semibold text-xl mb-2 text-blue-700">BÔNUS: Cliente Fiel Tem Desconto Progressivo!</h3>
+                <p class="text-blue-600">Quanto mais tempo conosco, maior o desconto em futuras automações.</p>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h2 class="section-title">Pronto para Simplificar Sua Rotina?</h2>
+            <p class="text-gray-700 md:text-lg mb-6">
+                Diga adeus ao stress dos agendamentos manuais e olá para uma agenda organizada e clientes mais presentes!
+            </p>
+            <a href="#" class="cta-button inline-block">
+                Quero Iniciar Meu Teste Gratuito de 7 Dias!
+            </a>
+            <p class="text-sm text-gray-500 mt-4">
+                (Entre em contato para mais informações)
+            </p>
+        </section>
+
+        <footer class="text-center mt-12 py-6 border-t border-gray-300">
+            <p class="text-sm text-gray-500">&copy; <span id="currentYear"></span> Seu Nome/Empresa Aqui. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
 </html>
